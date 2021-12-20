@@ -1,0 +1,14 @@
+@use  "../abstract/variable";
+@use "../abstract/function" as func;
+
+@keyframes color-change {
+    0% {
+        color: func.theme-colors("primary");
+    }
+    50% {
+        color: func.theme-colors("secondary");
+    }
+    100% {
+        color: func.theme-colors("primary");
+    }
+}

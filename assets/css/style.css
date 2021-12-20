@@ -1,5 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;500&display=swap");
+.color-anim {
+  transition: 500ms;
+  animation: color-change 10s infinite;
+}
+
+@keyframes color-change {
+  0% {
+    color: #48466D;
+  }
+  50% {
+    color: #3D84A8;
+  }
+  100% {
+    color: #48466D;
+  }
+}
+.btn, .btn-primary {
+  padding: 0.8rem 1.6rem;
+  border-radius: 30px;
+  line-height: 1;
+  font-size: 0.9rem;
+  border: none;
+  outline: none;
+}
+.btn-primary {
+  background-color: #48466D;
+  color: #cdffef;
+}
+.btn-primary:hover {
+  background-color: #3D84A8;
+}
+
 * {
-  background-color: red;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  padding: 1rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header--menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+.header--menu--item > a {
+  margin-right: 1.5rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #3D84A8;
+}
+.header--menu--item > a:hover {
+  color: #46CDCF;
+}
+.header--menu--item > a.active {
+  color: #48466D;
 }
 
 /*# sourceMappingURL=style.css.map */

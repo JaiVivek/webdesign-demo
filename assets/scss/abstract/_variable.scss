@@ -1,0 +1,12 @@
+$font-primary:'Poppins', sans-serif;
+
+$theme-colors:(
+    "primary":#48466D,
+    "secondary":#3D84A8,
+    "primary-hover":#46CDCF,
+    "light":#cdffef
+);
+.color-anim {
+    transition: 500ms;
+    animation: color-change 10s infinite;
+}

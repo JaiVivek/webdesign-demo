@@ -1,3 +1,18 @@
-*{
-    background-color: red;
-}
+//variable
+@use "./abstract/variable";
+@use  "./abstract/function";
+
+//base
+@use "./base/reset";
+@use "./base/global";
+
+//Utilities
+@use "./utilities/animation";
+
+//layouts
+@use "./components/buttons";
+
+//components
+@use "./layouts/header";
+
+
