@@ -9,10 +9,19 @@
 //Utilities
 @use "./utilities/animation";
 
-//layouts
-@use "./components/buttons";
-
 //components
-@use "./layouts/header";
+@use "./components/buttons";
+@use "./components/badges";
 
+//layouts 
+@use "./layouts/header";
+@use "./layouts/bg_elements";
+
+//pages
+@use  "./pages/home";
+
+
+//utilities
+
+@use "./utilities/spacing.scss";
 

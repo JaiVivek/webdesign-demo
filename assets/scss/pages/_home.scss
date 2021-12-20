@@ -1,0 +1,23 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as func;
+.hero-area {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &--contents {
+        max-width: 35rem;
+    }
+
+    &--title {
+        font-size: 3rem;
+        font-weight: 600;
+    }
+    &--desc {
+        margin-top: 1rem;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-family: $font-primary !important;
+        color: func.theme-colors("primary") !important;
+    }
+}

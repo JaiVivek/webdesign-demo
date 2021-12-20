@@ -4,11 +4,12 @@
 
 .btn {
     padding: 0.8rem 1.6rem;
-    border-radius: 30px;
+    border-radius: 10px;
     line-height: 1;
     font-size: 0.9rem;
     border: none;
     outline: none;
+    cursor: pointer;
    
     &-primary {
         @extend .btn;
@@ -16,7 +17,20 @@
         color :func.theme-colors("light");
 
         &:hover {
-            background-color: func.theme-colors("secondary");;
+            background-color: func.theme-colors("light");
+            border: 1px solid func.theme-colors("primary");
+            color :func.theme-colors("primary");
+        }
+    }
+    &-primary-outline {
+        @extend .btn;
+        background-color: func.theme-colors("light");
+        border: 1px solid func.theme-colors("primary");
+        color: func.theme-colors("primary");
+
+        &:hover {
+            background-color:func.theme-colors("primary") ;
+            color:func.theme-colors("light");
         }
     }
 }

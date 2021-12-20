@@ -1,0 +1,119 @@
+
+.background-shapes {
+    .shapes {
+        
+        position: absolute;
+        z-index: -1;
+        transform: rotate(360deg);
+        animation: box-shape linear 5s infinite;
+
+        &-box1 {
+            @extend .shapes;
+            top: 20%;
+            left: 10%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid blueviolet;
+            border-radius: 0.35rem;
+        }
+        &-box2 {
+            @extend .shapes;
+            top: 90%;
+            left: 60%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid blueviolet;
+            border-radius: 0.35rem;
+        }
+        &-box3 {
+            @extend .shapes;
+            top: 30%;
+            left: 70%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid blueviolet;
+            border-radius: 0.35rem;
+        }
+        &-dot1 {
+            @extend .shapes;
+            width: 8px;
+            height: 8px;
+            top: 77%;
+            left: 6%;
+            background-color: chocolate;
+            border-radius: 50%;
+        }
+        &-dot2 {
+            @extend .shapes;
+            width: 8px;
+            height: 8px;
+            top: 18%;
+            right: 4%;
+            background-color: chocolate;
+            border-radius: 50%;
+        }
+        &-dot3 {
+            @extend .shapes;
+            width: 8px;
+            height: 8px;
+            top: 95%;
+            left: 43%;
+            background-color: chocolate;
+            border-radius: 50%;
+        }
+        &-heart1 {
+            @extend .shapes;
+            font-size: 1.5rem;
+            top: 51%;
+            left: 13%;
+            color: gold;
+        }
+        &-heart2 {
+            @extend .shapes;
+            font-size: 1.5rem;
+            top: 58%;
+            right: 3%;
+            color: gold;
+        }
+        &-heart3 {
+            @extend .shapes;
+            font-size: 1.5rem;
+            top: 67%;
+            right: 50%;
+            color: gold;
+        }
+        &-circle1 {
+            @extend .shapes;
+            top: 80%;
+            left: 21%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid rgb(9, 255, 0);
+            border-radius: 50%;
+        }
+        &-circle2 {
+            @extend .shapes;
+            top: 20%;
+            left: 60%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid rgb(9, 255, 0);
+            border-radius: 50%;
+        }
+        &-circle3 {
+            @extend .shapes;
+            bottom: 20%;
+            left: 80%;
+            width: 15px;
+            height: 15px;
+            background-color: transparent;
+            border: 3px solid rgb(9, 255, 0);
+            border-radius: 50%;
+        }
+    }
+}
