@@ -1,0 +1,33 @@
+@use  "../abstract/variable" as *;
+@use  "../abstract/function" as func;
+
+.about-area {
+    margin-top: 13rem;
+    padding: 8rem 20rem;
+   background-color: func.theme-colors("primary");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    &--img {
+       border-radius: 10px;
+       box-shadow: 10px 10px 10px black ;
+    }
+    &-contents {
+        color: func.theme-colors("light");
+
+         &--title {
+            font-size: 2rem;
+         } 
+         &--desc {
+             line-height: 2;
+            .font-tamil {
+                font-family: $font-tamil ;
+            }
+
+         }
+    }
+
+}
+    

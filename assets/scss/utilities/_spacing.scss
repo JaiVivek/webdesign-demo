@@ -31,7 +31,7 @@ $space-axis-key:"x" "right" , "y" "bottom";
     @each $key ,$value in $space-axis-key {
         .space-#{$key}-#{$space-axis} > * {
 
-            marign-#{$value}:#{$space-axis}rem;
+            margin-#{$value}:#{$space-axis}rem;
         }
     }
     

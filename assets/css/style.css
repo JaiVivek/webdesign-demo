@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Vujahday+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kavivanar&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Vujahday+Script&display=swap");
 .color-anim {
   transition: 500ms;
   animation: color-change 10s infinite;
@@ -218,6 +218,36 @@ a {
   line-height: 1.5;
   font-family: "Poppins", sans-serif !important;
   color: #48466D !important;
+}
+.hero-area--img {
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px;
+}
+
+.about-area {
+  margin-top: 13rem;
+  padding: 8rem 20rem;
+  background-color: #48466D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-area--img {
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+.about-area-contents {
+  color: #cdffef;
+}
+.about-area-contents--title {
+  font-size: 2rem;
+}
+.about-area-contents--desc {
+  line-height: 2;
+}
+.about-area-contents--desc .font-tamil {
+  font-family: "Kavivanar", cursive;
 }
 
 .m-1 {
@@ -821,43 +851,43 @@ a {
 }
 
 .space-x-1 > * {
-  marign-right: 1rem;
+  margin-right: 1rem;
 }
 
 .space-y-1 > * {
-  marign-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 .space-x-2 > * {
-  marign-right: 2rem;
+  margin-right: 2rem;
 }
 
 .space-y-2 > * {
-  marign-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .space-x-3 > * {
-  marign-right: 3rem;
+  margin-right: 3rem;
 }
 
 .space-y-3 > * {
-  marign-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .space-x-4 > * {
-  marign-right: 4rem;
+  margin-right: 4rem;
 }
 
 .space-y-4 > * {
-  marign-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 
 .space-x-5 > * {
-  marign-right: 5rem;
+  margin-right: 5rem;
 }
 
 .space-y-5 > * {
-  marign-bottom: 5rem;
+  margin-bottom: 5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

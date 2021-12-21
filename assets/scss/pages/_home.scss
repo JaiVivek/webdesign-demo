@@ -20,4 +20,9 @@
         font-family: $font-primary !important;
         color: func.theme-colors("primary") !important;
     }
+    &--img {
+        width:300px;
+        border-radius: 15px;
+        box-shadow: 10px 10px 20px ;
+    }
 }
