@@ -345,6 +345,55 @@ a {
   filter: grayscale(0);
 }
 
+.courses {
+  padding: 6rem 5rem;
+  background-color: #48466D;
+}
+.courses-title {
+  text-align: center;
+  color: #cdffef;
+}
+.courses-title h2 {
+  font-size: 2rem;
+}
+.courses-card {
+  display: flex;
+  justify-content: space-between;
+}
+.courses-card--items {
+  background-color: #fff;
+  max-width: 360px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.courses-card--items h4 {
+  font-size: 1.5rem;
+}
+.courses-card--items p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+.courses-card--items---img {
+  width: 360px;
+}
+.courses-card--items---body {
+  padding: 2rem;
+  text-align: center;
+}
+.courses-card--items:hover {
+  box-shadow: 2px 2px 20px 5px #2e2e2e;
+}
+.courses-info {
+  text-align: center;
+  color: #cdffefc9;
+}
+.courses-info a {
+  color: #cdffef;
+}
+.courses-info a:hover {
+  text-shadow: 2px 2px 10px #303030;
+}
+
 .m-1 {
   margin: spacerem !important;
 }

@@ -1,0 +1,57 @@
+@use "../abstract/variable" as *;
+@use "../abstract/function" as func;
+
+.courses {
+    padding: 6rem 5rem;
+    background-color: func.theme-colors("primary");
+
+    &-title {
+        text-align: center;
+        color: func.theme-colors("light");
+        h2 {
+            font-size: 2rem;
+        }
+    }
+    &-card {
+        display: flex;
+        justify-content: space-between;
+
+        &--items {
+            background-color: #fff;
+            max-width: 360px;
+            border-radius: 10px;
+            overflow: hidden;
+
+            h4 {
+                font-size: 1.5rem;
+            }
+            p {
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+
+            &---img {
+                width: 360px;
+            }
+            &---body {
+                padding: 2rem;
+                text-align: center;
+                
+            }
+            &:hover {
+                box-shadow: 2px 2px 20px 5px rgb(46, 46, 46);
+            }
+        }
+    }
+    &-info {
+        text-align: center;
+        color:#cdffefc9;
+        
+        a {
+            color:func.theme-colors("light");
+            &:hover {
+                text-shadow: 2px 2px 10px rgb(48, 48, 48);
+            }
+        }
+    }
+}
