@@ -240,6 +240,32 @@ a {
   border-radius: 50%;
 }
 
+.footer {
+  padding: 2rem 0;
+  background-color: #48466D;
+  text-align: center;
+  color: #cdffef;
+}
+.footer a {
+  color: #3D84A8;
+}
+.footer a:hover {
+  text-shadow: 2px 2px 20px #000;
+}
+.footer .social-icons > a {
+  transition: 500ms;
+  font-size: 1.5rem;
+  padding: 0 10px;
+  color: #3D84A8;
+}
+.footer .social-icons > a:hover {
+  color: #46CDCF;
+}
+.footer .legal {
+  font-size: 0.8rem;
+  color: #3D84A8;
+}
+
 .hero-area {
   display: flex;
   justify-content: space-around;
@@ -370,7 +396,7 @@ a {
 }
 
 .courses {
-  padding: 6rem 10rem;
+  padding: 6rem 8rem;
   background-color: #48466D;
 }
 .courses-title {

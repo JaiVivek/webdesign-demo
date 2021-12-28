@@ -1,0 +1,29 @@
+@use  "../abstract/function"as func;
+.footer {
+    padding: 2rem 0;
+    background-color: func.theme-colors("primary");
+    text-align: center;
+    color: func.theme-colors("light");
+
+    a {
+        color: func.theme-colors("secondary");
+
+        &:hover {
+            text-shadow: 2px 2px 20px #000;
+        }
+    }
+   .social-icons > a{
+       transition: 500ms;
+        font-size: 1.5rem;
+        padding: 0 10px;
+        color: func.theme-colors("secondary");
+
+        &:hover {
+            color: func.theme-colors("primary-hover");
+        }
+    }
+    .legal {
+        font-size: 0.8rem;
+        color: func.theme-colors("secondary");
+    }
+}
