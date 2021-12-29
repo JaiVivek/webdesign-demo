@@ -1,9 +1,21 @@
 @use  "../abstract/function"as func;
+@use "../abstract/mixins" as mixins;
 .footer {
     padding: 2rem 0;
     background-color: func.theme-colors("primary");
     text-align: center;
     color: func.theme-colors("light");
+
+    h2 {
+        @include mixins.responsive(xs) {
+            font-size: 1.2rem;
+        }
+    }
+    p {
+        @include mixins.responsive(xs) {
+            font-size: 0.9rem;
+        }
+    }
 
     a {
         color: func.theme-colors("secondary");
@@ -25,5 +37,13 @@
     .legal {
         font-size: 0.8rem;
         color: func.theme-colors("secondary");
+     
+     p {
+        @include mixins.responsive(xs) {
+            font-size: 0.7rem;
+        }
+    } 
+    
     }
+
 }

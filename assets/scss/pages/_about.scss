@@ -1,5 +1,6 @@
 @use  "../abstract/variable" as *;
 @use  "../abstract/function" as func;
+@use "../abstract/mixins" as mixins;
 
 .about-area {
     margin-top: 13rem;
@@ -8,22 +9,44 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @include mixins.responsive(xs) {
+        padding: 4rem 2rem;
+        flex-direction: column;
+        margin-top: 0px;
+
+    }
 
 
     &--img {
        border-radius: 10px;
-       box-shadow: 10px 10px 10px black ;
+       box-shadow: 10px 10px 20px black ;
+       @include mixins.responsive(xs) {
+       margin-left: 3.5rem;
+       }
+
     }
     &-contents {
         color: func.theme-colors("light");
 
+        @include mixins.responsive(xs) {
+            margin-left: 3.5rem;
+        }
+
          &--title {
-            font-size: 2rem;
+            font-size: 3rem;
+            @include mixins.responsive(xs) {
+                font-size: 2rem;
+            }
+
          } 
          &--desc {
              line-height: 2;
             .font-tamil {
                 font-family: $font-tamil ;
+            }
+            @include mixins.responsive(xs) {
+                font-size: 0.9rem;
+                line-height: 3;
             }
 
          }

@@ -1,5 +1,6 @@
 @use "../abstract/variable" as *;
 @use "../abstract/function" as func;
+@use "../abstract/mixins" as mixins;
 * {
     padding: 0;
     margin: 0 ;
@@ -15,7 +16,18 @@
      justify-content: space-between;
      align-items: center;
      margin-bottom: 1rem;
-    
+    @include mixins.responsive(xs) {
+        padding: 1rem 2rem;
+    }
+    .nav-bar {
+       display: none;
+        @include mixins.responsive(xs) {
+            font-size: 1.3rem;
+            color: func.theme-colors("primary");
+            margin-left: 5rem;
+            display: block;
+        }
+    }
      
  
      &--menu {
@@ -23,6 +35,9 @@
          align-items: center;
          list-style-type: none;
          text-transform: uppercase;
+         @include mixins.responsive(xs) {
+             display: none;
+         }
  
          &--item > a {
              margin-right: 1.5rem;

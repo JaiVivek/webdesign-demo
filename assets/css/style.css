@@ -12,6 +12,11 @@
   margin: 20px auto;
 }
 
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
 @keyframes color-change {
   0% {
     color: #48466D;
@@ -118,11 +123,32 @@ a {
   align-items: center;
   margin-bottom: 1rem;
 }
+@media screen and (max-width: 576px) {
+  .header {
+    padding: 1rem 2rem;
+  }
+}
+.header .nav-bar {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .header .nav-bar {
+    font-size: 1.3rem;
+    color: #48466D;
+    margin-left: 5rem;
+    display: block;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
   list-style-type: none;
   text-transform: uppercase;
+}
+@media screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
 }
 .header--menu--item > a {
   margin-right: 1.5rem;
@@ -137,6 +163,11 @@ a {
   color: #3D84A8;
 }
 
+@media screen and (max-width: 576px) {
+  .background-shapes {
+    display: none;
+  }
+}
 .background-shapes .shapes, .background-shapes .shapes-circle3, .background-shapes .shapes-circle2, .background-shapes .shapes-circle1, .background-shapes .shapes-heart3, .background-shapes .shapes-heart2, .background-shapes .shapes-heart1, .background-shapes .shapes-dot3, .background-shapes .shapes-dot2, .background-shapes .shapes-dot1, .background-shapes .shapes-box3, .background-shapes .shapes-box2, .background-shapes .shapes-box1 {
   position: absolute;
   z-index: -1;
@@ -246,6 +277,16 @@ a {
   text-align: center;
   color: #cdffef;
 }
+@media screen and (max-width: 576px) {
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
 .footer a {
   color: #3D84A8;
 }
@@ -265,11 +306,22 @@ a {
   font-size: 0.8rem;
   color: #3D84A8;
 }
+@media screen and (max-width: 576px) {
+  .footer .legal p {
+    font-size: 0.7rem;
+  }
+}
 
 .hero-area {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+@media screen and (max-width: 576px) {
+  .hero-area {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
 }
 .hero-area--contents {
   max-width: 35rem;
@@ -277,16 +329,27 @@ a {
 .hero-area--title {
   font-size: 3rem;
   font-weight: 600;
+  color: #48466D;
+}
+@media screen and (max-width: 576px) {
+  .hero-area--title {
+    font-size: 2rem;
+  }
 }
 .hero-area--desc {
   margin-top: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
   font-family: "Poppins", sans-serif !important;
-  color: #48466D !important;
+  color: #3D84A8 !important;
+}
+@media screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 0.9rem;
+  }
 }
 .hero-area--img {
-  width: 300px;
+  width: 350px;
   border-radius: 15px;
   box-shadow: 10px 10px 20px;
 }
@@ -299,15 +362,37 @@ a {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+    flex-direction: column;
+    margin-top: 0px;
+  }
+}
 .about-area--img {
   border-radius: 10px;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 20px black;
+}
+@media screen and (max-width: 576px) {
+  .about-area--img {
+    margin-left: 3.5rem;
+  }
 }
 .about-area-contents {
   color: #cdffef;
 }
+@media screen and (max-width: 576px) {
+  .about-area-contents {
+    margin-left: 3.5rem;
+  }
+}
 .about-area-contents--title {
-  font-size: 2rem;
+  font-size: 3rem;
+}
+@media screen and (max-width: 576px) {
+  .about-area-contents--title {
+    font-size: 2rem;
+  }
 }
 .about-area-contents--desc {
   line-height: 2;
@@ -315,18 +400,36 @@ a {
 .about-area-contents--desc .font-tamil {
   font-family: "Kavivanar", cursive;
 }
+@media screen and (max-width: 576px) {
+  .about-area-contents--desc {
+    font-size: 0.9rem;
+    line-height: 3;
+  }
+}
 
 .roadmap {
   padding: 5rem 15rem;
 }
+@media screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 1rem;
+  }
+}
 .roadmap-title {
   text-align: center;
+  color: #48466D;
 }
 .roadmap-items {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem;
+}
+@media screen and (max-width: 576px) {
+  .roadmap-items {
+    flex-direction: column;
+    margin-left: 5rem;
+  }
 }
 .roadmap-item {
   padding: 5rem;
@@ -387,6 +490,12 @@ a {
   color: #3D84A8;
   z-index: 1;
 }
+@media screen and (max-width: 576px) {
+  .roadmap-item:not(:last-child):before {
+    top: 95%;
+    left: 40%;
+  }
+}
 .roadmap-item:hover:not(:last-child):before {
   color: #46CDCF;
   transform: scale(1.5);
@@ -399,6 +508,11 @@ a {
   padding: 6rem 8rem;
   background-color: #48466D;
 }
+@media screen and (max-width: 576px) {
+  .courses {
+    padding: 3rem 1rem;
+  }
+}
 .courses-title {
   text-align: center;
   color: #cdffef;
@@ -406,9 +520,20 @@ a {
 .courses-title h2 {
   font-size: 2rem;
 }
+@media screen and (max-width: 576px) {
+  .courses-title h2 {
+    font-size: 1.5rem;
+  }
+}
 .courses-card {
   display: flex;
   justify-content: space-between;
+}
+@media screen and (max-width: 576px) {
+  .courses-card {
+    flex-direction: column;
+    margin-left: 1.5rem;
+  }
 }
 .courses-card--items {
   background-color: #fff;
@@ -422,6 +547,11 @@ a {
 .courses-card--items p {
   font-size: 1rem;
   line-height: 1.5;
+}
+@media screen and (max-width: 576px) {
+  .courses-card--items p {
+    font-size: 0.9rem;
+  }
 }
 .courses-card--items---img {
   width: 360px;
@@ -448,6 +578,11 @@ a {
   padding: 5rem 10rem;
   background-color: #c7c6c6;
 }
+@media screen and (max-width: 576px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+}
 .contact-card {
   background-color: white;
   display: flex;
@@ -456,14 +591,30 @@ a {
   padding: 2rem 3rem;
   border-radius: 1rem;
 }
+@media screen and (max-width: 576px) {
+  .contact-card {
+    flex-direction: column;
+    align-items: initial;
+  }
+}
 .contact-card--contents {
   flex-grow: 1;
 }
 .contact-card--contents h4 {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 576px) {
+  .contact-card--contents h4 {
+    font-size: 1.2rem;
+  }
+}
 .contact-card--contents p {
   color: gray;
+}
+@media screen and (max-width: 576px) {
+  .contact-card--contents p {
+    font-size: 0.9rem;
+  }
 }
 .contact-card--img {
   width: 360px;

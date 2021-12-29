@@ -1,0 +1,80 @@
+// // X-Small devices (portrait phones, less than 576px)
+
+// // No media query for `xs` since this is the default in Bootstrap
+
+// // Small devices (landscape phones, 576px and up)
+// @media (max-width: 576px) { 
+//     * {
+//         background-color: orange;
+//      }
+        
+//      }
+    
+// @media (min-width: 576px) { 
+// * {
+//     background-color: blue;
+//  }
+    
+//  }
+
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) { 
+//     * {
+//         background-color: blueviolet;
+//      }
+// }
+
+// // Large devices (desktops, 992px and up)
+// @media (min-width: 992px) { 
+//     * {
+//         background-color: red;
+//      }
+//  }
+
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) { 
+//     * {
+//         background-color:yellow;
+//      }
+// }
+
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) { 
+//     * {
+//         background-color: green;
+//      }
+//  }
+
+@mixin responsive($breakpoint) {
+    //x-small < 576px
+    @if $breakpoint == xs {
+        @media screen and (max-width: 576px) {
+            @content;
+        }  
+    }
+    @else if $breakpoint == sm {
+        @media screen and (min-width: 576px) {
+            @content;
+        } 
+    } 
+    @else if $breakpoint == md {
+        @media screen and (min-width: 768px) {
+            @content;
+        } 
+    } 
+    @else if $breakpoint == lg {
+        @media screen and (min-width: 992px) {
+            @content;
+        } 
+    } 
+    @else if $breakpoint == xlg {
+        @media screen and (min-width: 1200px) {
+            @content;
+        } 
+    }
+    @else if $breakpoint == xxlg {
+        @media screen and (min-width: 1400px) {
+            @content;
+        } 
+    }
+}

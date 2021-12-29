@@ -1,11 +1,17 @@
 @use "../abstract/variable" as *;
 @use  "../abstract/function" as func;
+@use  "../abstract/mixins" as mixins;
 
 .roadmap {
   padding: 5rem 15rem;
 
+  @include mixins.responsive(xs) {
+  padding: 4rem 1rem;
+  }
+
   &-title {
      text-align: center;
+     color: func.theme-colors("primary");
   }
      
   &-items {
@@ -13,6 +19,12 @@
       justify-content: center;
       align-items: center;
       margin:1rem;
+     
+      @include mixins.responsive(xs) {
+        flex-direction: column;
+        margin-left: 5rem;
+       
+      }
   }
   &-item {
       padding: 5rem ;
@@ -78,8 +90,13 @@
           font-size: 2rem;
           font-weight: 600;
           color: func.theme-colors("secondary");
-        
           z-index: 1;
+
+          @include mixins.responsive(xs) {
+            top: 95%;
+            left: 40%;
+            
+          }
       }
 
       &:hover:not(:last-child):before {
