@@ -125,7 +125,12 @@ a {
 }
 @media screen and (max-width: 576px) {
   .header {
-    padding: 1rem 2rem;
+    padding: 1rem 3rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .header {
+    padding: 1rem 5rem;
   }
 }
 .header .nav-bar {
@@ -135,7 +140,15 @@ a {
   .header .nav-bar {
     font-size: 1.3rem;
     color: #48466D;
-    margin-left: 5rem;
+    margin-left: 4rem;
+    display: block;
+  }
+}
+@media screen and (min-width: 576px) {
+  .header .nav-bar {
+    font-size: 1.3rem;
+    color: #48466D;
+    margin-left: 25rem;
     display: block;
   }
 }
@@ -146,6 +159,11 @@ a {
   text-transform: uppercase;
 }
 @media screen and (max-width: 576px) {
+  .header--menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 576px) {
   .header--menu {
     display: none;
   }
@@ -231,6 +249,12 @@ a {
   left: 13%;
   color: gold;
 }
+@media screen and (min-width: 576px) {
+  .background-shapes .shapes-heart1 {
+    top: 55%;
+    left: 15%;
+  }
+}
 .background-shapes .shapes-heart2 {
   font-size: 1.5rem;
   top: 58%;
@@ -282,7 +306,17 @@ a {
     font-size: 1.2rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .footer h2 {
+    font-size: 1.2rem;
+  }
+}
 @media screen and (max-width: 576px) {
+  .footer p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 576px) {
   .footer p {
     font-size: 0.9rem;
   }
@@ -311,6 +345,11 @@ a {
     font-size: 0.7rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .footer .legal p {
+    font-size: 0.7rem;
+  }
+}
 
 .hero-area {
   display: flex;
@@ -320,7 +359,13 @@ a {
 @media screen and (max-width: 576px) {
   .hero-area {
     flex-direction: column;
-    padding: 4rem 2rem;
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .hero-area {
+    flex-direction: column;
+    padding: 4rem 2rem 0rem;
   }
 }
 .hero-area--contents {
@@ -336,6 +381,11 @@ a {
     font-size: 2rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .hero-area--title {
+    font-size: 1.5rem;
+  }
+}
 .hero-area--desc {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -344,6 +394,11 @@ a {
   color: #3D84A8 !important;
 }
 @media screen and (max-width: 576px) {
+  .hero-area--desc {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 576px) {
   .hero-area--desc {
     font-size: 0.9rem;
   }
@@ -369,13 +424,24 @@ a {
     margin-top: 0px;
   }
 }
+@media screen and (min-width: 576px) {
+  .about-area {
+    padding: 4rem 2rem;
+  }
+}
 .about-area--img {
   border-radius: 10px;
   box-shadow: 10px 10px 20px black;
 }
 @media screen and (max-width: 576px) {
   .about-area--img {
-    margin-left: 3.5rem;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .about-area--img {
+    margin-left: 4rem;
+    width: 300px;
   }
 }
 .about-area-contents {
@@ -383,7 +449,12 @@ a {
 }
 @media screen and (max-width: 576px) {
   .about-area-contents {
-    margin-left: 3.5rem;
+    margin-left: 4rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .about-area-contents {
+    margin-left: 4rem;
   }
 }
 .about-area-contents--title {
@@ -392,6 +463,11 @@ a {
 @media screen and (max-width: 576px) {
   .about-area-contents--title {
     font-size: 2rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .about-area-contents--title {
+    font-size: 1.5rem;
   }
 }
 .about-area-contents--desc {
@@ -406,11 +482,22 @@ a {
     line-height: 3;
   }
 }
+@media screen and (min-width: 576px) {
+  .about-area-contents--desc {
+    font-size: 0.9rem;
+    line-height: 3;
+  }
+}
 
 .roadmap {
   padding: 5rem 15rem;
 }
 @media screen and (max-width: 576px) {
+  .roadmap {
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 576px) {
   .roadmap {
     padding: 4rem 1rem;
   }
@@ -429,6 +516,12 @@ a {
   .roadmap-items {
     flex-direction: column;
     margin-left: 5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .roadmap-items {
+    flex-direction: column;
+    margin-left: 6rem;
   }
 }
 .roadmap-item {
@@ -496,6 +589,12 @@ a {
     left: 40%;
   }
 }
+@media screen and (min-width: 576px) {
+  .roadmap-item:not(:last-child):before {
+    top: 95%;
+    left: 45%;
+  }
+}
 .roadmap-item:hover:not(:last-child):before {
   color: #46CDCF;
   transform: scale(1.5);
@@ -513,6 +612,11 @@ a {
     padding: 3rem 1rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .courses {
+    padding: 3rem 1rem;
+  }
+}
 .courses-title {
   text-align: center;
   color: #cdffef;
@@ -525,6 +629,11 @@ a {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .courses-title h2 {
+    font-size: 1.3rem;
+  }
+}
 .courses-card {
   display: flex;
   justify-content: space-between;
@@ -533,6 +642,11 @@ a {
   .courses-card {
     flex-direction: column;
     margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .courses-card {
+    font-size: 1rem;
   }
 }
 .courses-card--items {
@@ -544,11 +658,26 @@ a {
 .courses-card--items h4 {
   font-size: 1.5rem;
 }
+@media screen and (max-width: 576px) {
+  .courses-card--items h4 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .courses-card--items h4 {
+    font-size: 1.2rem;
+  }
+}
 .courses-card--items p {
   font-size: 1rem;
   line-height: 1.5;
 }
 @media screen and (max-width: 576px) {
+  .courses-card--items p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (min-width: 576px) {
   .courses-card--items p {
     font-size: 0.9rem;
   }
@@ -579,6 +708,11 @@ a {
   background-color: #c7c6c6;
 }
 @media screen and (max-width: 576px) {
+  .contact {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (min-width: 576px) {
   .contact {
     padding: 2rem 1rem;
   }

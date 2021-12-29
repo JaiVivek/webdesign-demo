@@ -8,9 +8,10 @@
 
     @include mixins.responsive(xs) {
     padding: 3rem 1rem;
-
     }
-
+    @include mixins.responsive(sm) {
+        padding: 3rem 1rem;
+    }
     &-title {
         text-align: center;
         color: func.theme-colors("light");
@@ -19,6 +20,9 @@
             font-size: 2rem;
             @include mixins.responsive(xs) {
                 font-size: 1.5rem;
+            }
+            @include mixins.responsive(sm) {
+                font-size: 1.3rem;
             }
         }
     }
@@ -29,6 +33,9 @@
             flex-direction: column;
             margin-left: 1.5rem;
         }
+        @include mixins.responsive(sm) {
+            font-size: 1rem;
+        }
 
         &--items {
             background-color: #fff;
@@ -38,11 +45,20 @@
 
             h4 {
                 font-size: 1.5rem;
+                  @include mixins.responsive(xs) {
+                font-size: 1.5rem;
+            }
+            @include mixins.responsive(sm) {
+                font-size: 1.2rem;
+            }
             }
             p {
                 font-size: 1rem;
                 line-height: 1.5;
                 @include mixins.responsive(xs) {
+                    font-size: 0.9rem;
+                }
+                @include mixins.responsive(sm) {
                     font-size: 0.9rem;
                 }
             }

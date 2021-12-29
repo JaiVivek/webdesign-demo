@@ -8,9 +8,12 @@
 
     @include mixins.responsive(xs) {
         flex-direction: column;
-        padding: 4rem 2rem;
+        padding: 2rem 3rem;
     }
-
+    @include mixins.responsive(sm) {
+        flex-direction: column;
+        padding: 4rem 2rem 0rem;
+    }
     &--contents {
         max-width: 35rem;
     }
@@ -22,6 +25,9 @@
         @include mixins.responsive(xs) {
         font-size: 2rem;
         }
+        @include mixins.responsive(sm) {
+            font-size: 1.5rem;
+            }
     }
     &--desc {
         margin-top: 1rem;
@@ -33,10 +39,14 @@
         @include mixins.responsive(xs) {
             font-size: .9rem;
             }
+            @include mixins.responsive(sm) {
+                font-size: .9rem;
+                }
     }
     &--img {
         width: 350px;
         border-radius: 15px;
         box-shadow: 10px 10px 20px ;
+     
     }
 }

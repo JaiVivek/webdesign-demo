@@ -9,33 +9,47 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     @include mixins.responsive(xs) {
         padding: 4rem 2rem;
         flex-direction: column;
         margin-top: 0px;
-
     }
-
+    @include mixins.responsive(sm) {
+        padding: 4rem 2rem;
+        
+        
+    }
 
     &--img {
        border-radius: 10px;
        box-shadow: 10px 10px 20px black ;
        @include mixins.responsive(xs) {
-       margin-left: 3.5rem;
+       margin-left: 4rem;
        }
+       @include mixins.responsive(sm) {
+        margin-left: 4rem;
+        width: 300px;
+        }
 
     }
     &-contents {
         color: func.theme-colors("light");
 
         @include mixins.responsive(xs) {
-            margin-left: 3.5rem;
+            margin-left: 4rem;
+        }
+        @include mixins.responsive(sm) {
+            margin-left: 4rem;
         }
 
          &--title {
             font-size: 3rem;
             @include mixins.responsive(xs) {
                 font-size: 2rem;
+            }
+            @include mixins.responsive(sm) {
+                font-size: 1.5rem;
             }
 
          } 
@@ -47,6 +61,11 @@
             @include mixins.responsive(xs) {
                 font-size: 0.9rem;
                 line-height: 3;
+            }
+            @include mixins.responsive(sm) {
+                font-size: 0.9rem;
+                line-height: 3;
+               
             }
 
          }

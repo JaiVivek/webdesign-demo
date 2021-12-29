@@ -73,6 +73,10 @@
             top: 51%;
             left: 13%;
             color: gold;
+            @include mixins.responsive(sm) {
+                top: 55%;
+                left: 15%;
+            }
         }
         &-heart2 {
             @extend .shapes;

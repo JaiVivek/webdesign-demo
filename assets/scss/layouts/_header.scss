@@ -17,16 +17,26 @@
      align-items: center;
      margin-bottom: 1rem;
     @include mixins.responsive(xs) {
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;  
+    }
+    @include mixins.responsive(sm) {
+        padding: 1rem 5rem;
     }
     .nav-bar {
-       display: none;
+        display: none;
         @include mixins.responsive(xs) {
             font-size: 1.3rem;
             color: func.theme-colors("primary");
-            margin-left: 5rem;
+            margin-left: 4rem;
             display: block;
         }
+        @include mixins.responsive(sm) {
+            font-size: 1.3rem;
+            color: func.theme-colors("primary");
+            margin-left: 25rem;
+            display: block;
+        }
+     
     }
      
  
@@ -35,10 +45,14 @@
          align-items: center;
          list-style-type: none;
          text-transform: uppercase;
+
          @include mixins.responsive(xs) {
              display: none;
          }
- 
+         @include mixins.responsive(sm) {
+            display: none;
+        }
+
          &--item > a {
              margin-right: 1.5rem;
              font-size: 14px;
