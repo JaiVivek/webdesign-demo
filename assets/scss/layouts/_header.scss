@@ -1,15 +1,7 @@
 @use "../abstract/variable" as *;
 @use "../abstract/function" as func;
 @use "../abstract/mixins" as mixins;
-* {
-    padding: 0;
-    margin: 0 ;
-    box-sizing: border-box;
-    font-family: $font-primary;
- }
- a {
-     text-decoration: none;
- }
+
  .header {
      padding: 1rem 20rem;
      display: flex;
@@ -61,6 +53,33 @@
 
          @include mixins.responsive(xs) {
              display: none;
+
+             position: fixed;
+            
+             top: -100%;
+             left: 0px;
+             width: 100vw;
+             height: 100vh;
+             background-color: func.theme-colors("light");
+             z-index: 1;
+             transition: 500ms;
+
+             &.show {
+                 display: block;
+                 top: 64px;
+                 text-align: center;
+             }
+             & li {
+                 padding: 2rem;
+                
+                 a {
+                     color: func.theme-colors("primary-hover") ;
+
+                     &.active {
+                         color:  func.theme-colors("secondary");
+                     }
+                 }
+             }
          }
          @include mixins.responsive(sm) {
             display: none;

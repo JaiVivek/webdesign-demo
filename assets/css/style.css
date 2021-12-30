@@ -4,6 +4,18 @@
   animation: color-change 10s infinite;
 }
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
 .line {
   background: linear-gradient(to right, #fa6464, #7b86ff);
   width: 4rem;
@@ -15,6 +27,10 @@
 .img-responsive {
   max-width: 100%;
   height: auto;
+}
+
+.hidden {
+  display: none;
 }
 
 @keyframes color-change {
@@ -105,17 +121,6 @@
   resize: none;
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
 .header {
   padding: 1rem 20rem;
   display: flex;
@@ -181,6 +186,28 @@ a {
 @media screen and (max-width: 576px) {
   .header--menu {
     display: none;
+    position: fixed;
+    top: -100%;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: #cdffef;
+    z-index: 1;
+    transition: 500ms;
+  }
+  .header--menu.show {
+    display: block;
+    top: 64px;
+    text-align: center;
+  }
+  .header--menu li {
+    padding: 2rem;
+  }
+  .header--menu li a {
+    color: #46CDCF;
+  }
+  .header--menu li a.active {
+    color: #3D84A8;
   }
 }
 @media screen and (min-width: 576px) {
