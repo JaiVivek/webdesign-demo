@@ -12,6 +12,15 @@
     @include mixins.responsive(sm) {
         padding: 3rem 1rem;
     }
+    @include mixins.responsive(md) {
+        padding: 3rem 2rem;
+    }
+    @include mixins.responsive(xlg) {
+        padding: 2rem 5rem;
+    }
+    @include mixins.responsive(xxlg) {
+        padding: 2rem 5rem;
+    }
     &-title {
         text-align: center;
         color: func.theme-colors("light");
