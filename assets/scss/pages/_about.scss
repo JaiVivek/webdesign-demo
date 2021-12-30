@@ -51,6 +51,9 @@
             @include mixins.responsive(sm) {
                 font-size: 1.5rem;
             }
+            @include mixins.responsive(lg) {
+                font-size: 2.5rem;
+            }
 
          } 
          &--desc {
@@ -67,7 +70,9 @@
                 line-height: 3;
                
             }
-
+            @include mixins.responsive(lg) {
+                font-size: 1rem;
+            }
          }
     }
 

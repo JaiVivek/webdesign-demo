@@ -61,6 +61,10 @@
                 @include mixins.responsive(sm) {
                     font-size: 0.9rem;
                 }
+                @include mixins.responsive(lg) {
+                    font-size: 0.9rem;
+                    line-height: 1.8;
+                }
             }
 
             &---img {

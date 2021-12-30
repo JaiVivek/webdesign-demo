@@ -133,6 +133,16 @@ a {
     padding: 1rem 5rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .header {
+    padding: 2rem 3rem;
+  }
+}
 .header .nav-bar {
   display: none;
 }
@@ -152,6 +162,11 @@ a {
     display: block;
   }
 }
+@media screen and (min-width: 992px) {
+  .header .nav-bar {
+    display: none;
+  }
+}
 .header--menu {
   display: flex;
   align-items: center;
@@ -166,6 +181,16 @@ a {
 @media screen and (min-width: 576px) {
   .header--menu {
     display: none;
+  }
+}
+@media screen and (min-width: 992px) {
+  .header--menu {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header--menu {
+    font-size: 6rem;
   }
 }
 .header--menu--item > a {
@@ -210,6 +235,12 @@ a {
   border: 3px solid blueviolet;
   border-radius: 0.35rem;
 }
+@media screen and (min-width: 992px) {
+  .background-shapes .shapes-box2 {
+    top: 120%;
+    left: 50%;
+  }
+}
 .background-shapes .shapes-box3 {
   top: 30%;
   left: 70%;
@@ -227,6 +258,12 @@ a {
   background-color: chocolate;
   border-radius: 50%;
 }
+@media screen and (min-width: 992px) {
+  .background-shapes .shapes-dot1 {
+    top: 110%;
+    left: 15%;
+  }
+}
 .background-shapes .shapes-dot2 {
   width: 8px;
   height: 8px;
@@ -234,6 +271,12 @@ a {
   right: 4%;
   background-color: chocolate;
   border-radius: 50%;
+}
+@media screen and (min-width: 992px) {
+  .background-shapes .shapes-dot2 {
+    top: 30%;
+    left: 30%;
+  }
 }
 .background-shapes .shapes-dot3 {
   width: 8px;
@@ -253,6 +296,12 @@ a {
   .background-shapes .shapes-heart1 {
     top: 55%;
     left: 15%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .background-shapes .shapes-heart1 {
+    top: 70%;
+    left: 5%;
   }
 }
 .background-shapes .shapes-heart2 {
@@ -293,6 +342,12 @@ a {
   background-color: transparent;
   border: 3px solid #09ff00;
   border-radius: 50%;
+}
+@media screen and (min-width: 992px) {
+  .background-shapes .shapes-circle3 {
+    top: 110%;
+    right: 5%;
+  }
 }
 
 .footer {
@@ -368,6 +423,11 @@ a {
     padding: 4rem 2rem 0rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .hero-area {
+    flex-direction: row;
+  }
+}
 .hero-area--contents {
   max-width: 35rem;
 }
@@ -407,6 +467,11 @@ a {
   width: 350px;
   border-radius: 15px;
   box-shadow: 10px 10px 20px;
+}
+@media screen and (min-width: 992px) {
+  .hero-area--img {
+    width: 300px;
+  }
 }
 
 .about-area {
@@ -470,6 +535,11 @@ a {
     font-size: 1.5rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .about-area-contents--title {
+    font-size: 2.5rem;
+  }
+}
 .about-area-contents--desc {
   line-height: 2;
 }
@@ -488,6 +558,11 @@ a {
     line-height: 3;
   }
 }
+@media screen and (min-width: 992px) {
+  .about-area-contents--desc {
+    font-size: 1rem;
+  }
+}
 
 .roadmap {
   padding: 5rem 15rem;
@@ -498,6 +573,11 @@ a {
   }
 }
 @media screen and (min-width: 576px) {
+  .roadmap {
+    padding: 4rem 1rem;
+  }
+}
+@media screen and (min-width: 992px) {
   .roadmap {
     padding: 4rem 1rem;
   }
@@ -522,6 +602,11 @@ a {
   .roadmap-items {
     flex-direction: column;
     margin-left: 6rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .roadmap-items {
+    flex-direction: row;
   }
 }
 .roadmap-item {
@@ -593,6 +678,12 @@ a {
   .roadmap-item:not(:last-child):before {
     top: 95%;
     left: 45%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .roadmap-item:not(:last-child):before {
+    top: 25%;
+    left: 100%;
   }
 }
 .roadmap-item:hover:not(:last-child):before {
@@ -682,6 +773,12 @@ a {
     font-size: 0.9rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .courses-card--items p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+  }
+}
 .courses-card--items---img {
   width: 360px;
 }
@@ -752,6 +849,11 @@ a {
 }
 .contact-card--img {
   width: 360px;
+}
+@media screen and (min-width: 992px) {
+  .contact-card--img {
+    width: 300px;
+  }
 }
 
 .m-1 {

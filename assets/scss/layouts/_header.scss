@@ -22,6 +22,12 @@
     @include mixins.responsive(sm) {
         padding: 1rem 5rem;
     }
+    @include mixins.responsive(lg) {
+        padding: 2rem 3rem;
+    }
+    @include mixins.responsive(xxlg) {
+        padding: 2rem 3rem;
+    }
     .nav-bar {
         display: none;
         @include mixins.responsive(xs) {
@@ -36,6 +42,10 @@
             margin-left: 25rem;
             display: block;
         }
+        @include mixins.responsive(lg) {
+            display: none;
+        }
+        
      
     }
      
@@ -52,7 +62,13 @@
          @include mixins.responsive(sm) {
             display: none;
         }
-
+        @include mixins.responsive(lg) {
+             display: flex; 
+        }
+        @include mixins.responsive(xlg) {
+            font-size: 6rem;
+        }
+      
          &--item > a {
              margin-right: 1.5rem;
              font-size: 14px;

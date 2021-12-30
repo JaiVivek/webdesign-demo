@@ -46,6 +46,9 @@
         }
         &--img {
             width: 360px;
+            @include mixins.responsive(lg) {
+                width: 300px;
+            }
         }
     }
    
